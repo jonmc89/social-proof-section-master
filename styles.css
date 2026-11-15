@@ -15,3 +15,7 @@
   --orange-400: #ef9546;
   --gradient1: linear-gradient(#512051, #8a4389);
 }
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
