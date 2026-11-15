@@ -1,0 +1,17 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --purple-900: #512051;
+  --purple-300: #927b91;
+  --purple-100: #f7f2f7;
+  --pink-400: #ee69a4;
+  --orange-400: #ef9546;
+  --gradient1: linear-gradient(#512051, #8a4389);
+}
