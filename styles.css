@@ -100,7 +100,6 @@ main {
   color: var(--white);
   font-size: 17px;
   line-height: 130%;
-  letter-spacing: 0.3px;
 }
 
 .review-name-details-wrapper {
