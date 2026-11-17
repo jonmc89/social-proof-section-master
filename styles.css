@@ -19,8 +19,36 @@
 /* Main Styles */
 
 body {
+  position: relative;
   scroll-behavior: smooth;
   font-family: 'League Spartan', sans-serif;
+}
+
+.desktop-img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop-img-bottom {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 main {
@@ -171,15 +199,30 @@ main {
 
 @media screen and (min-width: 90rem) {
   body {
+    display: flex;
+    align-items: center;
     margin-inline: auto;
-    margin-block: auto;
     padding: 0 10.3125rem;
     width: min(100% - 0.5rem, 90rem);
+    min-height: 100vh;
   }
+
+  .mobile-img-top,
+  .mobile-img-bottom {
+    display: none;
+  }
+
+  .desktop-img-top {
+    display: block;
+  }
+
+  .desktop-img-bottom {
+    display: block;
+  }
+
   main {
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
   }
 
   .top {
